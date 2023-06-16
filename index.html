@@ -1,0 +1,494 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+    <link rel="stylesheet" href="/index.css" />
+
+
+    <link rel="stylesheet" href="about.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://drive.google.com/uc?id=1d26zW3otkOCReqGr9tY6tm5b1NvqmERx"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://drive.google.com/uc?id=1r4mB-P01XXWIVwFDqQarujbu3SFtgNMC"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://drive.google.com/uc?id=1kdY2McDHrA-C45aPJN6FbO27j1k9lgXA"
+    />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://drive.google.com/uc?id=1NuxrHT61q34M4uv3URNTvXXccaxbHj0n"
+    />
+
+
+    <link
+      rel="stylesheet"
+      href="https://drive.google.com/uc?id=1ZKPnPl7DFx21MLB-qLZ1JvOBO3Jc_aFg"
+    />
+    <link rel="stylesheet" href="s.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://drive.google.com/uc?id=1r4mB-P01XXWIVwFDqQarujbu3SFtgNMC" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://drive.google.com/uc?id=1kdY2McDHrA-C45aPJN6FbO27j1k9lgXA" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://drive.google.com/uc?id=1NuxrHT61q34M4uv3URNTvXXccaxbHj0n" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+    <title>Img To PDF</title>
+  </head>
+
+  <body>
+    <div class="nav">
+      <span class="logo">
+        <i style="padding-left: 10px;" ></i> Photo-2-Pdf
+      </span>
+      
+
+
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+
+       
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/aboutus.html">About</a></li>
+        <li><a href="/Tearms.html">Terms</a></li>
+      </ul>
+  
+
+    
+   
+
+
+
+
+ 
+
+
+      <div>
+        <button
+        style="  border-radius: 40px  ;cursor: pointer "
+          onClick="{embedImages()}"
+          id="convertBtn"
+          convertBtn="{convertBtn}"
+          visibility="false"
+        >
+          SAVE AS PDF
+        </button>
+        <button onClick="{embedImages()}" id="download">DOWNLOAD</button>
+        <button  
+
+        
+          style="  border-radius: 40px  ;cursor: pointer "
+          id="upload-msg"
+          type="button"
+          accept="image/*"
+          disabled="true"
+        
+      
+        >
+        
+        <input style="width: 50px; height: 30px;" type="file"
+    id="upload-file"
+    onChange="{encodeImageFileAsURL(this)}"
+    multiple
+    accept="image/*"
+  />
+          UPLOAD FILES
+        </button>
+      </div>
+    </div>
+
+    <div class="input-page" id="input-page">
+      <div id="home"  class="choose-file">
+        <div class="add-more-files">
+          <div class="inp-container">
+            <input
+              type="file"
+              id="upload-file"
+              onChange="{encodeImageFileAsURL(this)}"
+              multiple
+              accept="image/*"
+            />
+            <h4 class="drop">DRAG & DROP OR</h4>
+            <p>
+              <i class="fa fa-file-image-o fa-4x img-icon"></i>
+            </p>
+            <label htmlFor="upload-file" id="custom-file">CHOOSE FILES</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pdf-page" id="pdf-page">
+      <div class="create-pdf" id="create-pdf"></div>
+    </div>
+    <div class="ss">
+      <h1>Description Guide How to Convert PNG To PDF</h1>
+      <p style="padding-bottom: 41px">
+        Below are Step how to Convert PNG Image File to The PDF format easiy.
+      </p>
+      <h2>Step 1</h2>
+      <p  style="padding-bottom: 10px">
+        Drag-and-drop and Choose File Button box or upload a PNG file directly
+        from your System to convert PNG to PDF file. By simply dragging and
+        dropping your file or uploading a PNG to our online PDF converter tool,
+        our PDF converter tool will automatically begin to convert your PNG into
+        a PDF file.
+      </p>
+
+      <h2 style="padding-bottom: 20px">Step 2</h2>
+      <p style="padding-bottom: 10px">
+        Our tool automatically Convert Png to Pdf.
+      </p>
+      <h2 style="padding-bottom: 20px">Step 3</h2>
+      <p style="padding-bottom: 10px">
+        Now your PDf File is ready for download click Save to Pdf file button66
+        and Download it.
+      </p>
+
+      <h2 style="padding-bottom: 20px">Step 
+      4</h2>
+      <p style="padding-bottom: 10px">
+        You can Add More File Png file by adding files button
+      </p>
+
+      <h2 style="padding-bottom: 20px">Step 5</h2>
+      <p style="padding-bottom: 10px">
+        If you want to delete png file you can delete by using delete button
+      </p>
+
+   
+      </table>
+    </div>
+
+    <div class="demo">
+      <h1>Welcome to our online PNG to PDF conversion tool
+
+      </h1>
+      <p style="padding-bottom: 16px;">
+
+      It  designed to simplify the process of transforming your PNG images into high-quality PDF files. In this article, we are excited to introduce our user-friendly tool, highlight its features, and guide you through the simple steps to convert your PNG images to PDF format.
+      </p>
+
+      <p style="padding-bottom: 10px;">
+         1. User-Friendly Interface:
+Our PNG to PDF converter boasts a clean and intuitive interface, making it effortless for users of all levels to navigate and utilize its functionalities. The tool eliminates any technical complexities, ensuring a smooth and hassle-free conversion experience.
+      </p>
+
+      <p style="padding-bottom: 10px;">
+       2. Simple Upload Process:
+Begin the conversion process by clicking the "Upload" button or by dragging and dropping your PNG files directly onto the tool's interface. You can select multiple PNG images to convert into a single PDF file or choose to convert them individually. Our tool supports various file sizes, allowing you to process both small and large PNG images seamlessly.
+      </p>
+
+      <p style="padding-bottom: 10px;">
+      3.Customization Options:
+        Tailor your PDF output according to your preferences. Our tool offers flexible options to adjust the page orientation, margins, and image compression settings. This empowers you to achieve the desired layout and image quality in your converted PDF files.
+     </p>
+     <p style="padding-bottom: 10px;">
+     4. Fast and Efficient Conversion:
+      Experience swift conversion times with our high-performance tool. Our advanced algorithms ensure that your PNG images are promptly processed, resulting in efficient conversions. You won't have to wait long to obtain your PDF files, saving you valuable time.
+    </p>
+    <p style="padding-bottom: 10px;">
+    5. High-Quality Output:
+    Maintain the quality of your PNG images throughout the conversion process. Our tool ensures that the converted PDF files retain the clarity, resolution, and color fidelity of the original PNG images. Rest assured that your visuals will be faithfully represented in the resulting PDF documents.
+    </p>
+    <p style="padding-bottom: 10px;">
+     6. Secure and Privacy-Focused:
+      We prioritize the security and privacy of your files. Our tool employs state-of-the-art encryption measures to safeguard your data during the conversion process. Once the conversion is complete, your files are automatically deleted from our servers, ensuring complete confidentiality.
+    </p>
+    <p style="padding-bottom: 10px;">
+    7.  Instant Download:
+      Once the conversion is finalized, your PDF files are ready for download. Simply click the "Download" button, and the converted PDFs will be saved to your local device. Enjoy seamless access to your files, allowing you to utilize them immediately for your specific needs.
+    </p>
+    <p style="padding-bottom: 15px;">
+      Conclusion:
+      With our user-friendly online tool, converting PNG images to PDF format has never been easier. Take advantage of the simple upload process, customization options, efficient conversion, and high-quality output. Enjoy the convenience of instant downloads and rest assured knowing that your files are handled with utmost security and privacy. Experience the power of our PNG to PDF converter and simplify your file conversion needs today.
+    </p>
+    </div>
+    <footer>
+      <div class="footer">
+   
+        <div class="container" style="   margin: auto; display: flex;
+       
+        align-items: center;
+        justify-content: center">
+          <div id="contact" class="row"  style="   margin: auto; display: flex;
+       
+          align-items: center;
+          justify-content: center">
+
+
+
+  
+
+            <h1   class="Contact-us">
+              Contact us
+             </h1>
+            
+    
+     
+            <div    class="col-sm-12"   style="   margin: auto; display: flex;
+       
+            align-items: center;
+            justify-content: center">
+              <ul class="social2_icon">
+           
+                <li>
+                  <a href="mailto:ashishcharde09@gmail.com"
+                    ><i class="fa fa-envelope" aria-hidden="true" >
+              
+                      
+                      </i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/ashishcharde09/"
+                    ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/1_ashishcharde_/"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 offset-md-1">
+                <p>
+                  Copyright © 2023 All rights reserved<a  style="color: rgb(70, 70, 70); cursor: pointer;">
+               Photo-2-Pdf Converter </a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script >
+
+var data = [];
+var width = 620;
+var height = 800;
+var pdfName;
+var fileName = "";
+
+const createPDF = document.getElementById("create-pdf");
+
+encodeImageFileAsURL = (element) => {
+  document.getElementById("input-page").style.display = "none";
+  document.getElementById("pdf-page").style.display = "inline-block";
+
+  const length = element.files.length;
+  for (var i = 0; i < length; i++) {
+    let file = element.files[i];
+    let pdfname = element.files[0];
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+
+    let obj = {
+      list: reader,
+      fileName: file.name,
+      time: new Date().toString() + i,
+    };
+
+    reader.onloadend = () => {
+      data = [...data, obj];
+      pdfName = pdfname.name;
+    };
+  }
+
+  setTimeout(convertToPDF, 1000);
+  document.getElementById("upload-file").value = null;
+  setTimeout(saveAsPDF, 1000);
+};
+
+saveAsPDF = () => {
+  document.getElementById("upload-msg").style.display = "none";
+  document.getElementById("convertBtn").style.display = "inline-block";
+};
+
+//delete item from pdf page
+handleDelete = (e) => {
+  data = data.filter((item) => item.time !== e.currentTarget.id);
+  if (data.length == 0) {
+    location.reload();
+  } else {
+    convertToPDF();
+  }
+};
+
+//initiate file downloading
+embedImages = async () => {
+  const pdfDoc = await PDFLib.PDFDocument.create();
+  for (var i = 0; i < data.length; i++) {
+    const jpgUrl = data[i].list.result;
+    const jpgImageBytes = await fetch(jpgUrl).then((res) => res.arrayBuffer());
+
+    const jpgImage = await pdfDoc.embedJpg(jpgImageBytes);
+
+    //Add a blank page to the document
+    const page = pdfDoc.addPage();
+
+    //set page size
+    page.setSize(width, height);
+    page.drawImage(jpgImage, {
+      x: 20,
+      y: 50,
+      width: page.getWidth() - 40,
+      height: page.getHeight() - 100,
+    });
+  }
+
+  //save the padf pages
+  const pdfBytes = await pdfDoc.save();
+
+  //download pdf file
+  download(pdfBytes, pdfName.slice(0, -4), "application/pdf");
+
+  //back to home page after downloading file
+  setTimeout(backToHomepage, 1000);
+};
+
+//display pdf images
+function convertToPDF() {
+  createPDF.innerHTML = "";
+  data.map((item, i) => {
+    const fileItem = document.createElement("div");
+    fileItem.setAttribute("class", "file-item");
+
+    const modify = document.createElement("div");
+    modify.setAttribute("class", "modify");
+
+    const button2 = document.createElement("button");
+    button2.setAttribute("class", "delete-btn");
+    button2.setAttribute("id", item.time);
+    const remove = document.createElement("i");
+    remove.setAttribute("class", "fa fa-trash");
+    button2.appendChild(remove);
+    button2.addEventListener("click", (e) => {
+      handleDelete(e);
+    });
+
+    modify.appendChild(button2);
+
+    fileItem.appendChild(modify);
+
+    const imgContainer = document.createElement("div");
+    imgContainer.setAttribute("class", "img-container");
+    const img = document.createElement("img");
+    img.setAttribute("id", "img");
+    img.src = item.list.result;
+    imgContainer.appendChild(img);
+    fileItem.appendChild(imgContainer);
+
+    const imgName = document.createElement("p");
+    imgName.setAttribute("id", "img-name");
+    imgName.innerHTML = item.fileName;
+    fileItem.appendChild(imgName);
+
+    //fileItem is the child of createPDF
+    createPDF.appendChild(fileItem);
+  });
+
+  const addMoreFile = document.createElement("div");
+  addMoreFile.setAttribute("class", "add-more-file");
+
+  const addFile = document.createElement("div");
+  addFile.setAttribute("class", "inp-cont");
+
+  const input = document.createElement("input");
+  input.setAttribute("id", "inp");
+  input.type = "file";
+  input.multiple = "true";
+  input.onchange = function () {
+    encodeImageFileAsURL(this);
+  };
+
+  const p = document.createElement("p");
+  const i = document.createElement("i");
+  i.setAttribute("class", "fa fa-plus");
+
+  p.appendChild(i);
+
+  const label = document.createElement("label");
+  label.htmlFor = "inp";
+  label.innerHTML = "Add Files";
+
+  addFile.appendChild(p);
+  addFile.appendChild(label);
+  addFile.appendChild(input);
+
+  //addFile is the child of addMoreFile
+  addMoreFile.appendChild(addFile);
+
+  //addMoreFile is the child of createPDF
+  createPDF.appendChild(addMoreFile);
+}
+
+//back to home
+function backToHomepage() {
+  location.reload();
+}
+
+/////////////////////
+let arrow = document.querySelectorAll(".arrow");
+for (var i = 0; i < arrow.length; i++) {
+  arrow[i].addEventListener("click", (e) => {
+    let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+    arrowParent.classList.toggle("showMenu");
+  });
+}
+let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".bx-menu");
+console.log(sidebarBtn);
+sidebarBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("close");
+});
+hamburger = document.querySelector(".hamburger");
+nav = document.querySelector("nav");
+hamburger.onclick = function () {
+  nav.classList.toggle("active");
+};
+
+    </script>
+    <script src="https://drive.google.com/uc?id=1jRKp-VAJN98fmWWGvqZALtGlFMfTeCtI"></script>
+    <script src="index.js"></script>
+    
+  </body>
+</html>
